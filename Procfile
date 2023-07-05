@@ -1,1 +1,1 @@
-web: gunicorn emerald-isle-jewelry.wsgi:application
+web: gunicorn emerald_isle_jewelry.wsgi:application
