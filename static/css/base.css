@@ -3,12 +3,13 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    position: relative;
+    background: url('/media/hero-img.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(80vh - 132px);
     background-color:#ebf3eb;
     color: #494932;
-    font-family: 'Lato';
+    font-family: 'Lato'
 
 }
 
@@ -29,6 +30,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .shop-now-button {
+    font-size: 2.6rem; 
+    height: 80px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+  }
+  
   
   /* Hover Effect */
   .btn:hover {
@@ -80,6 +91,7 @@ body {
 	background: #ebf3eb;
 	z-index: -1;
 }
+  
 
 /* -------------------------------- Media Queries */
 
@@ -115,3 +127,18 @@ body {
         height: calc(100vh - 116px);
     }
 }
+
+@media (max-width: 767px) {
+    .shop-now-button {
+      font-size: 2rem; 
+      height: 60px; 
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .shop-now-button {
+      font-size: 1.6rem; 
+      height: 50px; 
+    }
+  }
+  

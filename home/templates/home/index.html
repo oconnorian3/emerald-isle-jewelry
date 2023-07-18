@@ -12,17 +12,27 @@
 {% block content %}
 
 <!-- Hero Section -->
-<section class="jumbotron">
-  <div class="container text-center">
-      <h1>Emerald Isle Jewelry</h1>
-      <p>Made with love in Ireland</p>
-      <a class="btn btn-primary" href="{% url 'products' %}" role="button">Shop Now</a>
+<div class="container h-100">
+  <div class="row h-100">
+      <div class="col-7 col-md-6 my-auto">
+          <h1 class="display-4 logo-font text-white">
+              Made with love In Ireland
+          </h1>
+          <div class="my-5">
+              <h4>
+                  <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+              </h4>
+          </div>
+      </div>
   </div>
-</section>
+</div>
+
+
+
 
   <!-- Catergories -->
     <section class="container my-5">
-      <h2 class="text-center">Product Categories</h2>
+      <h2 class="text-center text-white">Product Categories</h2>
       <div class="row">
           <div class="col-lg-3 col-md-6">
               <div class="card">
@@ -71,7 +81,7 @@
 
   <!-- Featured Products -->
   <section class="container my-5">
-    <h2 class="text-center">Featured Products</h2>
+    <h2 class="text-center text-white">Featured Products</h2>
     <div class="row">
       <div class="col-lg-3 col-md-6">
         <div class="card">
