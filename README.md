@@ -8,7 +8,24 @@ The deployed site can be viewed here >>>>>
 
 *Site Home Page Image*
 
-## Planning Phase
+## UI/UX ##
+
+The overall design is minimalistic and contemporary. High quality product images were used throughout os the overall theme was kep to a minimum as to not take away from those images. The overall layout is what you would espect from alot of E-commerce sites. A few products are dsplayed on the homepage along with some inviting links to encourage the user to delve deeper into the site.  
+
+**Agile**
+
+The agile approach was employed in designing and constructing this project, from the outset of planning to the completion of development. To facilitate the process, I established a GitHub project and adopted the Kanban board methodology to divide project components into user stories and feasible tasks.
+
+For a comprehensive view of all user stories please refer to the linked project [Project Kanban Board](https://github.com/users/oconnorian3/projects/11/views/1). Additionally, each story has been assigned a label that indicates its level of significance in the site's overall functionality and acceptance.
+
+## Wireframe ##
+
+Below are some basic Wireframes done up before the project started.
+
+![](media/homepage-wireframe.png)
+
+
+## Planning Phase ##
 
 **Strategy**
 
@@ -25,6 +42,35 @@ The amount of products I could add is vast but due to time contraints and since 
 * Celtic Inpired Necklaces
 * Celtic Inspired Earrings
 
+The website caters to the following target groups:
+
+ * User Roles:
+
+    * Standard User
+    * Account User
+    * Administrator
+
+ * Demographics
+
+    * Mainly women with Irish Heritage
+    * Main market will be the USA but Worldwide shipping will be an option
+
+ * The website must provide the user with the ability to:
+
+    * Browse and purchase products
+    * Create an account 
+    * Checkout as a guest user   
+    * Fill out a contact form 
+
+ * The website must provide the admin with the ability to:
+
+    * Remove add and edit products 
+    * Manage profiles  
+
+    
+
+
+
 *Opportunities*
 
 *Insert table here*
@@ -32,3 +78,4 @@ The amount of products I could add is vast but due to time contraints and since 
 *Scope*
 
 In order to meet the project timeline and grading criteria, it is necessary to make trade-offs during the design and development process. To effectively manage this, I will employ the agile methodology. This involves conducting weekly progress reviews and making necessary adjustments to the features, whether by adding, adapting, or removing them, based on the project requirements. These reviews will be carried out after each sprint, ensuring that we deliver a Minimum Viable Product (MVP) by the specified deadline.
+
