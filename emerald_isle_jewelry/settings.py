@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-*v4cbbi9tp_j890e1vvbp^sctxk5)9h#tw4)eq*uroxmetowem
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['emerald-isle-jewelry-af11dcd57db0.herokuapp.com','8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['emerald-isle-jewelry-af11dcd57db0.herokuapp.com','8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu102.gitpod.io' 'localhost']
 
 
 # Application definition
