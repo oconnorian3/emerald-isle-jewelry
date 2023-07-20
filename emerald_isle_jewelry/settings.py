@@ -111,7 +111,8 @@ WSGI_APPLICATION = 'emerald_isle_jewelry.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': {
+        'default':
+            'Engine': 'django.db.backends.postgresql_psycopg2',
             'NAME': os.environ.get('DATABASE_URL'),
     }
 }
