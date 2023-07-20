@@ -14,8 +14,8 @@ import os
 from pathlib import Path
 import dj_database_url
 
-if os.path.exists("env.py"):
-    import env
+#if os.path.exists("env.py"):
+ #   import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-*v4cbbi9tp_j890e1vvbp^sctxk5)9h#tw4)eq*uroxmetowem
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['emerald-isle-jewelry-af11dcd57db0.herokuapp.com','8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu102.gitpod.io' 'localhost']
+ALLOWED_HOSTS = ['emerald-isle-jewelry-af11dcd57db0.herokuapp.com','8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu102.gitpod.io']
 
 
 # Application definition
@@ -112,8 +112,7 @@ WSGI_APPLICATION = 'emerald_isle_jewelry.wsgi.application'
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'DATABASE_URL',
+            'NAME': os.environ.get('DATABASE_URL'),
     }
 }
 else:
