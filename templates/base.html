@@ -50,13 +50,21 @@
               <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products
               </a>
-              <!-- Dropdown menu with product categories -->
-              <div class="dropdown-menu" aria-labelledby="productsDropdown">
-                <a class="dropdown-item" href="#">Catergories</a>
-                <a class="dropdown-item" href="#">Price</a>
-                <a class="dropdown-item" href="#">Rating</a>
-                <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
-              </div>
+
+                  <!-- Dropdown menu with product categories -->
+                  <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <a class="dropdown-item" href="{% url 'products' %}?category=claddagh_rings">Claddagh Rings</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?category=earrings">Earrings</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?category=pendants">Pendants</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?category=celtic-brooches">Celtic Brooches</a>
+                            <a class="dropdown-item" href="{% url 'products' %}?category=wristwear">Wristwear</a>
+                         </div>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">Rating</a>
+                    <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+                  </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
@@ -66,7 +74,7 @@
             </li>
           </ul>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <form method="GET" action="">
+            <form method="GET" action=" {% url 'products' %} ">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                     <div class="input-group-append">

@@ -117,6 +117,23 @@ body {
     }
 }
 
+a.category-badge > span.badge:hover {
+  background: #212529 !important;
+  color: #fff !important;
+}
+
+.btt-button {
+  height: 42px;
+  width: 42px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btt-link {
+  cursor: pointer;
+}
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
