@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'bag',
     'checkout',
+    'profiles',
 
     # Other
     'crispy_forms',
