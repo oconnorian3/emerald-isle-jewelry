@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-from pathlib import Path
 import dj_database_url
+from pathlib import Path
 
 #if os.path.exists("env.py"):
  #   import env
@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*v4cbbi9tp_j890e1vvbp^sctxk5)9h#tw4)eq*uroxmetowem'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['emerald-isle-jewelry-af11dcd57db0.herokuapp.com','8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu102.gitpod.io']
 
@@ -129,7 +129,7 @@ WSGI_APPLICATION = 'emerald_isle_jewelry.wsgi.application'
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
+}
 else:
     DATABASES = {
         'default': {
