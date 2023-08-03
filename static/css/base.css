@@ -132,6 +132,29 @@ body {
   border-color: #dc3545;
   border-radius: 0;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer (adjust as needed) */
+  background-color: #494932; /* Footer background color */
+  color: #fff;
+  font-weight: 300;
+  padding: 10px;
+}
+
+/* Center the social media links */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.social-icons a {
+  margin: 0 10px; /* Add some spacing between the social icons */
+}
   
 
 /* -------------------------------- Media Queries */
