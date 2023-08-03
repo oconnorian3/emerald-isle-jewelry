@@ -9,7 +9,19 @@ body {
     height: calc(80vh - 132px);
     background-color:#ebf3eb;
     color: #494932;
-    font-family: 'Lato'
+    font-family: 'Lato';
+    
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+  background: #494932 !important;
+  color: #fff;
+  padding: 3em;
 
 }
 
@@ -132,6 +144,7 @@ body {
   border-color: #dc3545;
   border-radius: 0;
 }
+
 
 
 /* Center the social media links */
