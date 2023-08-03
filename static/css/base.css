@@ -146,7 +146,7 @@ footer {
 }
 
  /* Style social media icons */
- /*.social-icons {
+ .social-icons {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -155,7 +155,7 @@ footer {
   align-items: center;
   height: 100%;
   color: #fff !important;
-}*/
+}
 
 .social-icons a {
   color: #fff; /* Change the icon color */
