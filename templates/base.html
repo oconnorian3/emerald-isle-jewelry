@@ -160,6 +160,32 @@
     {% block content %}
     {% endblock %}
 
+<!-- Site footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>This is the footer of the website.</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline text-right">
+                    <!-- Font Awesome social media icons -->
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <!-- Add more social media icons as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>    
+
     {% block postloadjs %}
     <script type="text/javascript">
       $('.toast').toast('show');
