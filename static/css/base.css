@@ -148,7 +148,7 @@ footer {
  .social-icons {
   list-style: none;
   margin: 0;
-  padding: 5px;
+  padding: 5px !important;
   display: flex;
   justify-content: center;
   align-items: center;
