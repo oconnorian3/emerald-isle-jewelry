@@ -10,8 +10,11 @@ def render_contact_form(request):
         if form.is_valid():
             form.save()  # Save the form data to the database
             
-            return redirect('home')  # Replace 'success-page' with the URL of a success page
+            return redirect('contact_success')  # Replace 'success-page' with the URL of a success page
     else:
         form = ContactForm()
 
     return render(request, 'contact/contact_form.html', {'form': form})
+
+def contact_success(request):
+    return render(request, 'contact/contact_success.html')
