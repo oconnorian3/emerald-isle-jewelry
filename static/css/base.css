@@ -43,6 +43,19 @@ footer {
     cursor: pointer;
   }
 
+  .btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #494932;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } 
+
   .shop-now-button {
     font-size: 2.6rem; 
     height: 80px; 
