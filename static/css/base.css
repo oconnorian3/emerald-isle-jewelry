@@ -329,7 +329,11 @@ color: #17a2b8; /* text-info */
 }
 
 /* Mail Chimp */
-#mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+#mc_embed_signup{
+  background:#fff; 
+  false;clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+  width: 400px;}
     
 
 /* fixed top navbar only on medium and up */
