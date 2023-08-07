@@ -43,7 +43,7 @@ footer {
     cursor: pointer;
   }
 
-  .btn1 {
+  .button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -159,22 +159,9 @@ footer {
 
  /* Style social media icons */
  .social-icons {
-  list-style: none;
-  margin: 0;
-  padding: 5px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
   color: #fff !important;
 }
 
-.social-icons a {
-  color: #fff; /* Change the icon color */
-  font-size: 24px;
-  margin: 10px; /* Add some spacing between the social icons */
-}
-  
 
 /* -------------------------------- Media Queries */
 
