@@ -143,42 +143,44 @@ Add content
 
 **My Account**
 
-   *Register*
+ *Register*
 
-    * Allows users register for an account
-    * Fields include Email address, Email Confirmation, Username, Password and Password confirmation
-    * Has an embedded link which takes the user back to the login page should they need to
+ * Allows users register for an account
+ * Fields include Email address, Email Confirmation, Username, Password and Password confirmation
+ * Has an embedded link which takes the user back to the login page should they need to
 
-![](media/Sign_Up.png)    
+![](media/Sign_Up.png)
 
-   *Login*
+ *Login*
 
-    * Login form asking for username and password of signed up user
-    * Fields include Username/Email & Password
-    * Includes "Remember me" checkbox option
-    * Has an embedded link which takes the user back to the register page should they need to
-    * Allows user reser their password should they need to
+ * Login form asking for username and password of signed up user
+ * Fields include Username/Email & Password
+ * Includes "Remember me" checkbox option
+ * Has an embedded link which takes the user back to the register page should they need to
+ * Allows user reser their password should they need to
 
 ![](media/Sign_In.png)
 
-   *My Profile (For Authenticated Users Only)*
+![](media/password_reset.png)
 
-    * Allows users update their shipping information so they do not have to fill this field out during checkout
-    * Allows users view past order history
+ *My Profile (For Authenticated Users Only)*
+
+ * Allows users update their shipping information so they do not have to fill this field out during checkout
+ * Allows users view past order history
 
 ![](/media/My_profile.png)    
 
-   *Product Management (For Super Users Only)*
+ *Product Management (For Super Users Only)*
 
-    * Allows users to add a new products through an easy to use interface
-    * Also allows you delete or edit live products
+ * Allows users to add a new products through an easy to use interface
+ * Also allows you delete or edit live products
 
 ![](media/product_management.png)    
 
 ![](media/edit_delete_products.png)
 
-   *Logout (For Authenticated Users Only)*
+ *Logout (For Authenticated Users Only)*
 
-    * Separate page prompts user to confirm action to sign out
+ * Separate page prompts user to confirm action to sign out
 
 ![](media/sign_out.png)
