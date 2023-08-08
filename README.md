@@ -67,14 +67,6 @@ The website caters to the following target groups:
     * Remove add and edit products 
     * Manage profiles  
 
-    
-
-
-
-*Opportunities*
-
-*Insert table here*
-
 *Scope*
 
 In order to meet the project timeline and grading criteria, it is necessary to make trade-offs during the design and development process. To effectively manage this, I will employ the agile methodology. This involves conducting weekly progress reviews and making necessary adjustments to the features, whether by adding, adapting, or removing them, based on the project requirements. These reviews will be carried out after each sprint, ensuring that we deliver a Minimum Viable Product (MVP) by the specified deadline.
@@ -138,8 +130,28 @@ Add content
 **Contact Us**
 
  * This is a simple form which allows the user contact the site admins directly. The form will not submit unless all fields are filled out. The email field requires a valid email.
+ * All information is saved to the database and can be easily accessed using the /admin url. 
 
  Insert Image
+
+**Categories Section**
+
+ * Allows user view products by catergory
+ * Displays full list of products for that catergory 
+ * Allows user sort producrs by price,rating,name & catergory for the all products section
+
+![](media/catergory.png) 
+
+**Product Pages**
+
+ * Provides user with large image of the product
+ * Provies a detailed product description
+ * Allows user add product to their shopping bag
+ * Allows user select size where appropriate
+ * Allows user add whatever qunatity of the product they would like
+ * Button in place to allow user go back to the products page
+
+![](media/product_detail.png)
 
 **My Account**
 
@@ -184,3 +196,41 @@ Add content
  * Separate page prompts user to confirm action to sign out
 
 ![](media/sign_out.png)
+
+**Shopping Bag**
+
+ * Allows users view the contents of the shopping bag
+ * Allows users remove items 
+ * Allows users update quantity
+ * Allows users view total
+ * Will let user know how much extras they need to spend for free shipping or cost off shipping as total stands
+ * Gives user the option to keep shopping or proceed to checkout
+
+![](/media/shopping_bag.png) 
+
+**Checkout**
+
+ * Prompts users to fill all required details and billing information. 
+ * There is an "*" on required fields which will not allow you procees unless filled out
+ * Embedded link allowing users to register or login to an account which would then save the billing information
+ * Credit card field will alert user if credit card information is incorrect
+ * Provides summary of purchase
+ * Allows user to go back and adjust the shopping bag or proceed with purchase once all info is submitted
+ * Fail safes are in place to process order correctly should user disconnect while sale is processing
+ * Directs user to a success page to confirm transaction was successful
+
+![](media/checkout.png)
+
+![](media/checkout_success.png)
+
+**Footer**
+
+ * Users can submit their emails so they can subscibe to our marketing emails
+ * Links to social media
+
+ Insert Image here
+
+## Oppurtunities For Future Features ##
+
+ * Allow super users set a quantity for products so items which are out of stock become unavailble for purchase
+ * Implement a pop up when the user visits the home page initially which would advertise a sale or ask for them to sing up to our newsletter
