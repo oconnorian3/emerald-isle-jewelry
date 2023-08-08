@@ -85,7 +85,7 @@ The site's layout is structured around ease of viewing products to make a seamle
 
 *Skeleton*
 
-Wireframes were made using Lucid. Please click [here](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/README.md#Wireframe to view Wireframes.
+Wireframes were made using Lucid. Please click [here](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/README.md#Wireframe) to view Wireframes.
 
 *Surface*
 
@@ -100,3 +100,85 @@ A light green background (#ebf3eb) for all pages was chosen throughout the site.
 The colour (#494932) was used for the footer and various button and links throughout. This colour stands out and ties in well against the light green background while not been to harsh. 
 
 ![](media/brown-button-links.png)
+
+**Fonts**
+
+Add content
+
+**Images and Logos/Icons**
+
+Add content
+
+## Features ##
+
+**Navigation**
+
+ * Navigation bar with logo and links
+ * Navigation bar with account login logo which allows customer access or create an account
+ * Navigation bar with shopping bag logo which allows user view their total and their shopping bag
+ * Responsive menu which collapes into a burger on small to medium screens
+ * Search bar so user can search for what they want as opposed to trawling through product pages
+
+ Insert Nav Screen Shot here
+
+**Landing Page**
+
+ * The landing page will display a large hero image with a large Shop Now button
+ * The landing page will display four featured Products and four featured Catergories
+ * The landing page will display both the headers and footer with easily identifiable links to help the user navigate throughout the site
+ * The landing page will display a free shipping banner across the top to encourage shoppers to hit the minimum limit for free shipping
+ * The landing page will display a "subscribe" feature in the footer to allow users sign up for regular updates
+
+  Insert Image here
+
+**About Us**
+
+ * This is just a page which will give the user a brief history on the company. This pages can help with brand autenticity but other than that it will just be a page containong text.
+
+**Contact Us**
+
+ * This is a simple form which allows the user contact the site admins directly. The form will not submit unless all fields are filled out. The email field requires a valid email.
+
+ Insert Image
+
+**My Account**
+
+   *Register*
+
+    * Allows users register for an account
+    * Fields include Email address, Email Confirmation, Username, Password and Password confirmation
+    * Has an embedded link which takes the user back to the login page should they need to
+
+![](media/Sign_Up.png)    
+
+   *Login*
+
+    * Login form asking for username and password of signed up user
+    * Fields include Username/Email & Password
+    * Includes "Remember me" checkbox option
+    * Has an embedded link which takes the user back to the register page should they need to
+    * Allows user reser their password should they need to
+
+![](media/Sign_In.png)
+
+   *My Profile (For Authenticated Users Only)*
+
+    * Allows users update their shipping information so they do not have to fill this field out during checkout
+    * Allows users view past order history
+
+![](/media/My_profile.png)    
+
+   *Product Management (For Super Users Only)*
+
+    * Allows users to add a new products through an easy to use interface
+    * Also allows you delete or edit live products
+
+![](media/product_management.png)    
+
+![](media/edit_delete_products.png)
+
+   *Logout (For Authenticated Users Only)*
+
+    * Separate page prompts user to confirm action to sign out
+
+![](media/sign_out.png)
