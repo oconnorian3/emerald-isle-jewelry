@@ -79,3 +79,24 @@ The website caters to the following target groups:
 
 In order to meet the project timeline and grading criteria, it is necessary to make trade-offs during the design and development process. To effectively manage this, I will employ the agile methodology. This involves conducting weekly progress reviews and making necessary adjustments to the features, whether by adding, adapting, or removing them, based on the project requirements. These reviews will be carried out after each sprint, ensuring that we deliver a Minimum Viable Product (MVP) by the specified deadline.
 
+*Structure*
+
+The site's layout is structured around ease of viewing products to make a seamless shopping experience and encourage sales. The home page has a large Shop Now button aswell as a featued Catergories and Product section. The nav bar also has a link to products aswell as various prompts/links throughout the site which will bring the user back to the producs page.
+
+*Skeleton*
+
+Wireframes were made using Lucid. Please click [here](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/README.md#Wireframe to view Wireframes.
+
+*Surface*
+
+This pertains to the visual design aspect and how to effectively convey the desired emotions and effects. For a more comprehensive understanding of planning for the surface plane please see below.
+
+**Colour Scheme**
+
+A light green background (#ebf3eb) for all pages was chosen throughout the site. This fitted in well with the overall theme of the site while also remaining light enough to allow images and other features and links throughout the site standout. 
+
+![](media/light-green-background.png)
+
+The colour (#494932) was used for the footer and various button and links throughout. This colour stands out and ties in well against the light green background while not been to harsh. 
+
+![](media/brown-button-links.png)
