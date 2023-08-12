@@ -10,7 +10,6 @@
 {% endblock %}
 
 {% block content %}
-
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
@@ -25,26 +24,26 @@
         {% csrf_token %}
         <div class="row">
             <div class="col-md-12">
-                <div class="form-group">
-                    <label for="{{ form.name.id_for_label }}">Name:</label>
+                <div class="mb-3">
+                    <label for="{{ form.name.id_for_label }}" class="form-label">Name:</label>
                     {{ form.name }}
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="form-group">
-                    <label for="{{ form.email.id_for_label }}">Email:</label>
+                <div class="mb-3">
+                    <label for="{{ form.email.id_for_label }}" class="form-label">Email:</label>
                     {{ form.email }}
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="form-group">
-                    <label for="{{ form.subject.id_for_label }}">Subject:</label>
+                <div class="mb-3">
+                    <label for="{{ form.subject.id_for_label }}" class="form-label">Subject:</label>
                     {{ form.subject }}
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="form-group">
-                    <label for="{{ form.message.id_for_label }}">Message:</label>
+                <div class="mb-3">
+                    <label for="{{ form.message.id_for_label }}" class="form-label">Message:</label>
                     {{ form.message }}
                 </div>
             </div>
@@ -52,7 +51,5 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-
-
-
 {% endblock %}
+
