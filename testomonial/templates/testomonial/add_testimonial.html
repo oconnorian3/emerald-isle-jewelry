@@ -13,10 +13,12 @@
 
 {% block content %}
 
+<div class="overlay">
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
 </form>
+<div>
 
 {% endblock %}
