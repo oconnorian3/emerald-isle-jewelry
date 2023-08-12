@@ -162,6 +162,15 @@ footer {
   color: #fff !important;
 }
 
+.custom-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.custom-form-group label {
+  font-weight: bold;
+}
+
 
 /* -------------------------------- Media Queries */
 
