@@ -32,7 +32,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['emerald-isle-jewelry-af11dcd57db0.herokuapp.com','8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu103.gitpod.io']
 
-
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 # Application definition
 
 AUTHENTICATION_BACKENDS = [
