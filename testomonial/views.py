@@ -16,5 +16,5 @@ def add_testimonial(request):
 
 
 def testimonial_list(request):
-    testimonials = Testimonial.objects.all()  # Retrieve all testimonials from the database
+    testimonials = Testimonial.objects.all()
     return render(request, 'testomonial/testimonial_list.html', {'testimonials': testimonials})
