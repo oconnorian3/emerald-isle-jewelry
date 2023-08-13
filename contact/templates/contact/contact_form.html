@@ -2,52 +2,46 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
-{% block content %}
-<div class="overlay"></div>
-<div class="container">
-    <h2 class="text-center mt-4">Contact Us</h2>
+<div class="container header-container">
     <div class="row">
-        <div class="col-md-8 offset-md-2">
-            <div class="card">
-                <div class="card-body">
-                    <form method="post">
-                        {% csrf_token %}
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name:</label>
-                            {{ form.name }}
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            {{ form.email }}
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Subject:</label>
-                            {{ form.subject }}
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message:</label>
-                            {{ form.message }}
-                        </div>
-                        <button type="submit" class="btn">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <div class="col"></div>
     </div>
 </div>
 {% endblock %}
 
-
-
-
-
-
-
+{% block content %}
+<section class="contact-section">
+    <div class="container">
+        <h2 class="text-center mt-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <div>{{ form.name }}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <div>{{ form.email }}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject:</label>
+                                <div>{{ form.subject }}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message:</label>
+                                <div>{{ form.message }}</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
 

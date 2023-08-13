@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
 
+
 class Testimonial(models.Model):
     author = models.CharField(max_length=100)
     product = models.CharField(max_length=100, default='Unknown Product')

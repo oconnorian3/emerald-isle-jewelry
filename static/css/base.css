@@ -357,7 +357,7 @@ color: #17a2b8; /* text-info */
   background: #494932;
   clear: left;
   font: 16px Helvetica, Arial, sans-serif;
-  width: 75%;
+  width: 75% !important;
 }
 
 /* fixed top navbar only on medium and up */
