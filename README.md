@@ -4,9 +4,9 @@ Emerald Isle Jewelry is a fictional jewelry store specilaising in Irish made Cel
 
 The idea for this project came from an online store I built myself and have since close before which sold Celtic Jewely.
 
-The deployed site can be viewed here >>>>>
+The deployed site can be viewed [here](https://emerald-isle-jewelry-af11dcd57db0.herokuapp.com/)
 
-*Site Home Page Image*
+![](media/responsivness.png)
 
 ## UI/UX ##
 
