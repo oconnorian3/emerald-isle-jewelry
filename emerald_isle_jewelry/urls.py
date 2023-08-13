@@ -29,7 +29,8 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
     path('testimonial/', include('testomonial.urls')),
+    path('saved/', include('saved.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'emerald_isle_jewelry.views.handler404'
-handler500 = 'emerald_isle_jewelry.views.handler500'
+#handler500 = 'emerald_isle_jewelry.views.handler500'
