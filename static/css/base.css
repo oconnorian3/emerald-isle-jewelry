@@ -18,17 +18,19 @@ body {
 
 }
 
-/*hero section */
-.hero-section {
-  padding-top: 35vh; 
-  padding-bottom: 35vh;
-}
-
 .hero-section .row {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
+}
+
+.hero-section h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-section .my-5 {
+  margin-top: 1rem;
 }
 
 
