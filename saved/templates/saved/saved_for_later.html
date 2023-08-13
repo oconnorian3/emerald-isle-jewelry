@@ -19,7 +19,7 @@
         <ul class="list-group">
           {% for item in saved_items %}
             <li class="list-group-item">
-              {{ item.product.name }}
+              <a href="{% url 'product_detail' product_id=item.product.id %}">{{ item.product.name }}</a>
               <form method="post" action="{% url 'remove_from_saved' item.id %}">
                 {% csrf_token %}
                 <button class="btn btn-danger btn-sm float-right" type="submit">Remove</button>
@@ -34,4 +34,5 @@
   </div>
 </div>
 {% endblock %}
+
 
