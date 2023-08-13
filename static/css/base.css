@@ -337,6 +337,13 @@ color: #fff;
 color: #17a2b8; /* text-info */
 }
 
+#mc_embed_signup {
+  background: #494932;
+  clear: left;
+  font: 16px Helvetica, Arial, sans-serif;
+  width: 600px;
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
   .fixed-top-desktop-only {
