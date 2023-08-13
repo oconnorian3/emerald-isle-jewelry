@@ -18,6 +18,20 @@ body {
 
 }
 
+/*hero section */
+.hero-section {
+  padding-top: 35vh; 
+  padding-bottom: 35vh;
+}
+
+.hero-section .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
 footer {
   background: #494932 !important;
   color: #fff;
