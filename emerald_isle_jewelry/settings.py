@@ -14,8 +14,6 @@ import os
 import dj_database_url
 from pathlib import Path
 
-#if os.path.exists("env.py"):
- #   import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,7 +28,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['emerald-isle-jewelry-af11dcd57db0.herokuapp.com','8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu103.gitpod.io']
+ALLOWED_HOSTS = [
+    'emerald-isle-jewelry-af11dcd57db0.herokuapp.com',
+    '8000-oconnorian3-emeraldisle-vodwottudvx.ws-eu103.gitpod.io'
+]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 # Application definition
@@ -131,22 +132,21 @@ WSGI_APPLICATION = 'emerald_isle_jewelry.wsgi.application'
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-}
+    }
 else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
+
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
@@ -179,7 +179,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_LOCATION = 'static'
 MEDIAFILES_LOCATION = 'media'
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -190,7 +190,6 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'emeraldislejewelry'
@@ -229,3 +228,4 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+

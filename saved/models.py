@@ -9,6 +9,5 @@ class SavedItem(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     saved_at = models.DateTimeField(auto_now_add=True)
 
-
     def get_absolute_url(self):
         return reverse('product_detail', args=[str(self.slug)])
