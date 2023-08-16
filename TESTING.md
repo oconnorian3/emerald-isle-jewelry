@@ -18,3 +18,17 @@ I utilized the "pycodestyle" tool to assess my Python code. "pycodestyle" is a c
 
 I did work through all reported errors but there are a handful of E501 errorsin various files I decided not to shorten.
 For example  the "AUTH_PASSWORD_VALIDATORS" settings in my settings.py file. It is bnot advisible to shorten those. 
+
+## Lighthouse Scores 
+
+**Home**
+
+![](/media/Lh_home.png)
+
+**Product Page**
+
+![](/media/Lh_products.png)
+
+**Checkout Page**
+
+![](/media/Lh_checkout.png)
