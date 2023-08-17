@@ -33,8 +33,25 @@ For example  the "AUTH_PASSWORD_VALIDATORS" settings in my settings.py file. It 
 
 ![](/media/Lh_checkout.png)
 
+**Testimonials**
+
+![](/media/testimonials_lh.png)
+
 **Contact Form**
+
+![](/media/contact_lh.png)
 
 **Profile Page**
 
 ![](/media/profile_lh.png)
+
+## Manual Testing
+
+For the following, I will skip the type of user, i.e. "As a shopper, I can…” and only list the latter part of the story as a heading.
+
+**Set up and deployment**
+
+ * Site accessibility
+  * Result Passed : Access the site via the deployed URL on the desktop.
+  * Result Passed : Access the site via the deployed URL on the tablet.
+  * Result Passed : Access the site via the deployed URL on the mobile.
