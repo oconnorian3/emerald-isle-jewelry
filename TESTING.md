@@ -32,3 +32,9 @@ For example  the "AUTH_PASSWORD_VALIDATORS" settings in my settings.py file. It 
 **Checkout Page**
 
 ![](/media/Lh_checkout.png)
+
+**Contact Form**
+
+**Profile Page**
+
+![](/media/profile_lh.png)
