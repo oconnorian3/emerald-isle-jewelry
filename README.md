@@ -111,7 +111,7 @@ Add content
  * Responsive menu which collapes into a burger on small to medium screens
  * Search bar so user can search for what they want as opposed to trawling through product pages
 
- Insert Nav Screen Shot here
+![](/media/nav_bar.png)
 
 **Landing Page**
 
@@ -121,11 +121,16 @@ Add content
  * The landing page will display a free shipping banner across the top to encourage shoppers to hit the minimum limit for free shipping
  * The landing page will display a "subscribe" feature in the footer to allow users sign up for regular updates
 
-  Insert Image here
+![](/media/home_page.png)
 
-**About Us**
+**Testimonials**
 
- * This is just a page which will give the user a brief history on the company. This pages can help with brand autenticity but other than that it will just be a page containong text.
+ * Allows users view testimonials from previous customers
+ * Users will receive a link in their order confirmation email with s link so they can provide a testimonial
+
+![](/media/testimonial_list.png)
+
+![](/media/submit_testimonial.png)
 
 **Contact Us**
 
@@ -223,14 +228,18 @@ Add content
 
 ![](media/checkout_success.png)
 
+**
+
 **Footer**
 
  * Users can submit their emails so they can subscibe to our marketing emails
  * Links to social media
 
- Insert Image here
+![](media/footer.png)
 
 ## Oppurtunities For Future Features ##
 
  * Allow super users set a quantity for products so items which are out of stock become unavailble for purchase
- * Implement a pop up when the user visits the home page initially which would advertise a sale or ask for them to sing up to our newsletter
+ * Implement a pop up when the user visits the home page initially which would advertise a sale or ask for them to sign up to our newsletter
+ * Automatically apply the rating value from the testimonial to the products as opposed to trying to work it out manually
+ * Approve testimonials before they are published , they can however be removed 

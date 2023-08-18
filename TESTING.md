@@ -4,7 +4,7 @@
 
 [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Femerald-isle-jewelry-af11dcd57db0.herokuapp.com)
 
-All pages passed the above validator except of the contact page. Confirmed it does indeed work but unable to address the below as this would require a complete refactor which is not possible due to time contraints. 
+No HTML erros found 
 
 ![](media/validator.png)
 
@@ -124,3 +124,4 @@ For the following, I will skip the type of user, i.e. "As a shopper, I can…”
   * Result Passed : Facebook link in footer redirects to Facebook page
   * Result Passed : Custom 404 page
 
+[Back to README](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/README.md)
