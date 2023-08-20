@@ -228,8 +228,6 @@ Add content
 
 ![](media/checkout_success.png)
 
-**
-
 **Footer**
 
  * Users can submit their emails so they can subscibe to our marketing emails
@@ -243,3 +241,25 @@ Add content
  * Implement a pop up when the user visits the home page initially which would advertise a sale or ask for them to sign up to our newsletter
  * Automatically apply the rating value from the testimonial to the products as opposed to trying to work it out manually
  * Approve testimonials before they are published , they can however be removed 
+
+## Database Models ##
+
+## Database Flowchart ##
+
+![](/media/database_diagram.png)
+
+I used Lucid to design the Database models.
+
+![](media/checkout_model.png)
+
+![](media/contact_model.png)
+
+![](media/catergory_model.png)
+
+![](media/product_model.png)
+
+![](media/profile_model.png)
+
+![](media/saved_model.png)
+
+![](media/testimonial_model.png)
