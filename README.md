@@ -20,7 +20,7 @@ For a comprehensive view of all user stories please refer to the linked project 
 
 ## Wireframe ##
 
-Below are some basic Wireframes done up before the project started.
+Below is a basic Wireframe of the homepage the project started.
 
 ![](media/wireframe.png)
 
@@ -61,6 +61,7 @@ The website caters to the following target groups:
     * Create an account 
     * Checkout as a guest user   
     * Fill out a contact form 
+    * Leave a post sale testimonial
 
  * The website must provide the admin with the ability to:
 
@@ -99,7 +100,7 @@ Add content
 
 **Images and Logos/Icons**
 
-Add content
+The product images were taken from the our suppliers site. font awesome was used for the various icoms throughout the site. 
 
 ## Features ##
 
