@@ -22,7 +22,7 @@ For a comprehensive view of all user stories please refer to the linked project 
 
 Below are some basic Wireframes done up before the project started.
 
-![](media/homepage-wireframe.png)
+![](media/wireframe.png)
 
 
 ## Planning Phase ##
@@ -250,16 +250,3 @@ Add content
 
 I used Lucid to design the Database models.
 
-![](media/checkout_model.png)
-
-![](media/contact_model.png)
-
-![](media/catergory_model.png)
-
-![](media/product_model.png)
-
-![](media/profile_model.png)
-
-![](media/saved_model.png)
-
-![](media/testimonial_model.png)
