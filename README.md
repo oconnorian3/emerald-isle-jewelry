@@ -313,5 +313,230 @@ I used Lucid to design the Database models.
 
 I have included testing details during and post-development in a separate document called [TESTING.MD](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/TESTING.md)
 
+## Technologies Used ##
+
+**Main Languages Used**
+
+ * HTML5
+ * CSS3
+ * Python
+
+**Hosting and Work**
+
+ * Lucid (Wireframe and DB model Diagrams)
+ * GitHub (Version Control)
+ * GitPod (IDE)
+ * Heroku (Hosting site)
+ * AWS (Static Files)
+ * Elephant SQL (Database)
+ * Stripe Payments
+
+**Python Libraries**
+
+ * PyJWT (Python library that provides a way to encode and decode JSON Web Tokens (JWTs). JWT is a compact, URL-safe means 
+    of representing claims to be transferred between two parties. It can be used for authentication and authorization purposes in web applications )
+ * Gunicorn (Python HTTP server for WSGI applications)
+ * pyscopg2 (PostgreSQL Database adapter)
+
+**Django Libraries**
+
+ * django-allauth (User authentication)
+ * django-crispy-forms (Control rendering behaviour of Django forms)
+ * django-bootstrap4 (A third-party package for Django web framework that provides integration with the popular front-end framework Bootstrap 4. 
+   It allows developers to easily use Bootstrap's styling and components in their Django templates, without having to write the HTML and CSS code manually)
+ * whitenoise ( Helps with static files on Heroku)
+
+
 ## Deployment ##
 
+This project was deployed using Heroku, AWS S3, ElephantSQL
+
+The following steps describe the required libraries to ensure successful deployment on Heroku.
+
+ * Install Gunicorn (server used to run Django on Heroku): pip3 install django gunicorn
+ * Install pyscopg2 (connects to PostgreSQL): pip 3 install dj_database_url pyscopg2
+ * Setup AWS Account (Amazon Web Services s3)
+
+**Creating the Heroku App**
+
+ * Log into Heroku and go to the Dashboard
+ * Click New and select Create new app from the drop-down
+ * Name app appropriately and choose relevant region, then click Create App
+
+**Create PostgreSQL database using ElephantSQL**
+
+Creating a database accessible by Heroku is essential, as the database provided by Django cannot be accessed by a deployed Heroku app.
+
+ * Log into ElephantSQL and go to Dashboard
+ * Click Create New Instance
+ * Set up a plan by providing a Name (project name) and select a Plan (for this project the free plan "Tiny Turtle" was chosen). Tags are optional.
+ * Click Select Region and choose appropriate Data center
+ * Click Review, check all details and click Create Instance
+ * Return to Dashboard on click on the name of the newly created instance
+ * Copy the database URL from the details section
+
+**Update Settings**
+
+ * Connect django project to env.py file
+ * Remove Secret Key provided by Django and refer to key set in Heroku settings instead
+ * To connect to new database, replace provided DATABASE variable with
+
+```
+ DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+```
+ * Save and migrate all changes made
+
+**Connecting Heroku to Database**
+
+ * In Heroku dashboard, go to Settings tab
+ * Add twelve new config vars
+
+![](/media/config_vars.png)
+
+**Connect To Amazon AWS S3**
+
+ 1. Create a new S3 bucket:
+
+    * Click "Services" in the top left-hand corner of the landing page, click on "Storage" then click "S3."
+    * Click "Create bucket."
+    * Give the bucket a unique name:
+    * Select the nearest location:
+        For me, this was EU (Frankfurt) eu-central-1.
+    * Under the "Object Ownership" section, select "ACLS enabled"
+    * Under the "Block Public Access settings for this bucket" section, untick "Block all public access" and tick 
+      the box to acknowledge that this will make the bucket public.
+    * Click "Create bucket."
+
+ 2. Amend Bucket settings:
+
+    * Bucket Properties: -
+
+     * Click on the bucket name to open the bucket.
+     * Click on the "Properties" tab.
+     * Under the "Static website hosting" section, click "Edit."
+     * Under the "Static website hosting" section select "Enable".
+     * Under the "Hosting type" section ensure "Host a static website" is selected.
+     * Under the "Index document" section enter "index.html".
+     * Click "Save changes."
+
+    * Bucket Permissions: -
+     * Click on the "Permissions" tab.
+     * Scroll down to the "CORS configuration" section and click edit.
+     * Enter the following snippet into the text box:
+```
+         [
+             {
+                 "AllowedHeaders": [
+                 "Authorization"
+                 ],
+                 "AllowedMethods": [
+                 "GET"
+                 ],
+                 "AllowedOrigins": [
+                 "*"
+                 ],
+                 "ExposeHeaders": []
+             }
+         ]
+```
+   * Cont'd 
+     * Click "Save changes."
+     * Scroll back up to the "Bucket Policy" section and click "Edit."
+     * Take note of the "Bucket ARN" click on the "Policy Generator" button to open the AWS policy generator in a new tab.
+     * In the newly opened tab under Step 1 "Select Policy Type" select "S3 Bucket Policy." from the drop down menu.
+     * Under Step 2 "Add Statement(s)" enter " * " in the "Principal" text box.
+     * From the "s3:Action" drop down menu select "s3:GetObject".
+     * Enter the "ARN" noted from the bucket policy page into the "Amazon Resource Name (ARN)" text box.
+     * Click "Add Statement."
+     * Under Step 3 "Generate Policy" click "Generate Policy."
+     * Copy the resultant policy and paste it into the bucket policy text box on the previous tab.
+     * In the same text box add "/*" to the end of the resource key to allow access to all resources in this bucket.
+     * Click "Save changes."
+     * When back on the buckets permissions tab, scroll down to the "Access Control List" section and click "Edit."
+     * Enable "List" for "Everyone (public access)", tick the box to accept that "I understand the effects of these changes on my objects and buckets." and click "Save changes."
+
+ 3. Create AWS static files User and assign to S3 Bucket:
+
+    * Create "User Group": -
+      * Click "Services" in the top left-hand corner of the landing page, from the left side of the menu click on 
+        "Security, Identity, &    Compliance"   and select "IAM" from the right side of the menu.
+      * Under "Access management" click "User Groups."
+      * Click "Create Group."
+      * Enter a user name (in the case of this project, I called the user group "manage-pp5-vapeshop").
+      * Scroll to the bottom of the page and click "Create Group."
+    * Create permissions policy for the new user group: -
+      * Click "Policies" in the left-hand menu.
+      * Click "Create Policy."
+      * Click "Import managed policy."
+      * Search for "AmazonS3FullAccess", select this policy, and click "Import".
+      * Click "JSON" under "Policy Document" to see the imported policy
+      * Copy the bucket ARN from the bucket policy page and paste it into the "Resource" section of the JSON snippet. 
+        Be sure to remove the default  value of the resource key ("*") and replace it with the bucket ARN.
+      * Copy the bucket ARN a second time into the "Resource" section of the JSON snippet. This time, add "/*" 
+        to the end of the ARN to allow access to all resources in this bucket.
+      * Click "Next: Tags."
+      * Click "Next: Review."
+      * Click "Review Policy."
+      * Enter a name for the policy (in the case of this project, I called the policy "pp5-vapeshop-policy").
+      * Enter a description for the policy.
+      * Click "Create Policy."
+    * Attach Policy to User Group: -
+      * Click "User Groups" in the left-hand menu.
+      * Click on the user group name created during the above step.
+      * Select the "Permissions" tab.
+      * Click "Attach Policy."
+      * Search for the policy created during the above step, and select it.
+      * Click "Attach Policy."
+    * Create User: -
+      * Click "Users" in the left-hand menu.
+      * Click "Add user."
+      * Enter a "User name" (in the case of this project, I called the user "pp5-vapeshop-staticfiles-user").
+      * Select "Programmatic access" and "AWS Management Console access."
+      * Click "Next: Permissions."
+      * Select "Add user to group."
+      * Select the user group created during the above step.
+      * Click "Next: Tags."
+      * Click "Next: Review."
+      * Click "Create user."
+      * Take note of the "Access key ID" and "Secret access key" as these will be needed to connect to the S3 bucket.
+      * Click "Download .csv" to download the credentials.
+      * Click "Close."
+
+ 4. Install required packages to used AWS S3 Bucket in Django:
+
+   * `pip install boto3
+   *  `pip install django-storages
+
+
+ 5. Add 'storages' to the bottom of the installed apps section of settings.py file:
+
+ ```
+  INSTALLED_APPS = [
+ …,
+     'storages'
+ …,
+]
+ ```
+
+ *To define AWS  as static file storage add the following to settings.py*
+
+ ```
+  # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+ ```
+
+**Allow Heroku as host**
+
+```
+ALLOWED_HOSTS = ['app-name.herokuapp.com', 'localhost']
+```
