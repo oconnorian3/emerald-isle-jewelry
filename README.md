@@ -179,7 +179,7 @@ Incorporating these strategies will create a holistic approach to promoting Emer
    all fields are filled out. The email field requires a valid email.
  * All information is saved to the database and can be easily accessed using the /admin url. 
 
- Insert Image
+![](/media/contact_us.png)
 
 **Categories Section**
 
