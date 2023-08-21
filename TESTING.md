@@ -4,9 +4,8 @@
 
 [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Femerald-isle-jewelry-af11dcd57db0.herokuapp.com)
 
-No HTML erros found 
+No HTML errors found 
 
-![](media/validator.png)
 
 [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femerald-isle-jewelry-af11dcd57db0.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 

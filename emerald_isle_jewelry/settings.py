@@ -64,7 +64,6 @@ INSTALLED_APPS = [
     'contact',
     'testomonial',
     'saved',
-    'django_extensions',
 
     # Other
     'crispy_forms',

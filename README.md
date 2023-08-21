@@ -274,12 +274,18 @@ Incorporating these strategies will create a holistic approach to promoting Emer
 
 ![](media/footer.png)
 
+**Custom 404**
+
+![](media/404.png)
+
 ## Oppurtunities For Future Features ##
 
  * Allow super users set a quantity for products so items which are out of stock become unavailble for purchase
  * Implement a pop up when the user visits the home page initially which would advertise a sale or ask for them to sign up to our newsletter
  * Automatically apply the rating value from the testimonial to the products as opposed to trying to work it out manually
  * Approve testimonials before they are published , they can however be removed 
+ * Intergrate more social media
+ * Add a blog
 
 ## Database Models ##
 
@@ -302,3 +308,10 @@ I used Lucid to design the Database models.
 ![](media/saved_model.png)
 
 ![](media/testimonial_model.png)
+
+## Testing ##
+
+I have included testing details during and post-development in a separate document called [TESTING.MD](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/TESTING.md)
+
+## Deployment ##
+
