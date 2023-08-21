@@ -251,3 +251,16 @@ The product images were taken from the our suppliers site. font awesome was used
 
 I used Lucid to design the Database models.
 
+![](media/checkout_model.png)
+
+![](media/contact_model.png)
+
+![](media/catergory_model.png)
+
+![](media/product_model.png)
+
+![](media/profile_model.png)
+
+![](media/saved_model.png)
+
+![](media/testimonial_model.png)
