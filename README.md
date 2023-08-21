@@ -506,8 +506,8 @@ Creating a database accessible by Heroku is essential, as the database provided 
 
  4. Install required packages to used AWS S3 Bucket in Django:
 
-   * `pip install boto3
-   *  `pip install django-storages
+   * `pip install boto3`
+   * `pip install django-storages`
 
 
  5. Add 'storages' to the bottom of the installed apps section of settings.py file:
@@ -540,3 +540,10 @@ Creating a database accessible by Heroku is essential, as the database provided 
 ```
 ALLOWED_HOSTS = ['app-name.herokuapp.com', 'localhost']
 ```
+
+## Sources Credits ##
+
+* Product images were taken from solvar.ie
+* Inspiration was taken from the walkthrough boutique Ado project for the checkout, profile, bag and products apps aswell as the nav bar
+* The steps listed in the *Connect To Amazon AWS S3* part of the ReadMe were taken from my mentors ReadMe as the steps were exactly the same
+* I had my own website before selling jewelry which I built on shopify which is closed. I built a Facebook page for that site which I used in this project as it demomnstrates all the skills needed and is relvant. 
