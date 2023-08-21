@@ -178,8 +178,11 @@ Incorporating these strategies will create a holistic approach to promoting Emer
  * This is a simple form which allows the user contact the site admins directly. The form will not submit unless 
    all fields are filled out. The email field requires a valid email.
  * All information is saved to the database and can be easily accessed using the /admin url. 
+ * User receives a message to confirm form has bee sent
 
 ![](/media/contact_us.png)
+
+![](/media/contact_success.png)
 
 **Categories Section**
 
@@ -226,8 +229,11 @@ Incorporating these strategies will create a holistic approach to promoting Emer
 
  * Allows users update their shipping information so they do not have to fill this field out during checkout
  * Allows users view past order history
+ * Allows users to save items to their profile they are intrested in
 
-![](/media/My_profile.png)    
+![](/media/My_profile.png)   
+
+![](/media/save_for_later.png)
 
  *Product Management (For Super Users Only)*
 
