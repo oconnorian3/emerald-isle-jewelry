@@ -1,8 +1,8 @@
 ## Emerald Isle Jewelry
 
-Emerald Isle Jewelry is a fictional jewelry store specilaising in Irish made Celtic Jewelry. The sotre is built using Django, Python, Bootstrap, HTML and CSS and the sites main goal is to provde the user with an east to use interface where they can purchase and browse all items the online store has to offer. 
+Emerald Isle Jewelry is a fictional jewelry store specilaising in Irish made Celtic Jewelry. The store is built using Django, Python, Bootstrap, HTML and CSS and the sites main goal is to provide the user with an easy to use interface where they can purchase and browse all items the online store has to offer. 
 
-The idea for this project came from an online store I built myself and have since close before which sold Celtic Jewelry.
+The idea for this project came from an online store I built myself and have since closed which sold Celtic Jewelry.
 
 The deployed site can be viewed [here](https://emerald-isle-jewelry-af11dcd57db0.herokuapp.com/)
 
@@ -20,7 +20,7 @@ For a comprehensive view of all user stories please refer to the linked project 
 
 ## Wireframe ##
 
-Below is a basic Wireframe of the homepage the project started.
+Below is a basic Wireframe of the homepage made the project started.
 
 ![](media/wireframe.png)
 
@@ -61,6 +61,7 @@ The website caters to the following target groups:
     * Create an account 
     * Checkout as a guest user   
     * Fill out a contact form 
+    * Save a product for future purchase
     * Leave a post sale testimonial
 
  * The website must provide the admin with the ability to:
@@ -80,10 +81,6 @@ The site's layout is structured around ease of viewing products to make a seamle
 
 Wireframes were made using Lucid. Please click [here](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/README.md#Wireframe) to view Wireframes.
 
-*Surface*
-
-This pertains to the visual design aspect and how to effectively convey the desired emotions and effects. For a more comprehensive understanding of planning for the surface plane please see below.
-
 **Colour Scheme**
 
 A light green background (#ebf3eb) for all pages was chosen throughout the site. This fitted in well with the overall theme of the site while also remaining light enough to allow images and other features and links throughout the site standout. 
@@ -100,7 +97,7 @@ Add content
 
 **Images and Logos/Icons**
 
-The product images were taken from the our suppliers site. Font awesome was used for the various icoms throughout the site. 
+The product images were taken from the our suppliers site. Font awesome was used for the various icons throughout the site. 
 
 ## Marketing Stratergy ##
 
@@ -145,7 +142,7 @@ Incorporating these strategies will create a holistic approach to promoting Emer
 **Navigation**
 
  * Navigation bar with logo and links
- * Navigation bar with account login logo which allows customer access or create an account
+ * Navigation bar with account login logo which allows customers access or create an account
  * Navigation bar with shopping bag logo which allows user view their total and their shopping bag
  * Responsive menu which collapes into a burger on small to medium screens
  * Search bar so user can search for what they want as opposed to trawling through product pages
@@ -160,14 +157,13 @@ Incorporating these strategies will create a holistic approach to promoting Emer
    help the user  navigate throughout the site
  * The landing page will display a free shipping banner across the top to encourage shoppers 
    to hit the minimum limit for free shipping
- * The landing page will display a "subscribe" feature in the footer to allow users sign up for regular updates
 
 ![](/media/home_page.png)
 
 **Testimonials**
 
  * Allows users view testimonials from previous customers
- * Users will receive a link in their order confirmation email with s link so they can provide a testimonial
+ * Users will receive a link in their order confirmation email with a link so they can provide a testimonial
 
 ![](/media/testimonial_list.png)
 
@@ -199,9 +195,10 @@ Incorporating these strategies will create a holistic approach to promoting Emer
  * Allows user add product to their shopping bag
  * Allows user select size where appropriate
  * Allows user add whatever qunatity of the product they would like
+ * Allows user if logged in to save product for later
  * Button in place to allow user go back to the products page
 
-![](media/product_detail.png)
+![](media/product_details.png)
 
 **My Account**
 
@@ -229,7 +226,7 @@ Incorporating these strategies will create a holistic approach to promoting Emer
 
  * Allows users update their shipping information so they do not have to fill this field out during checkout
  * Allows users view past order history
- * Allows users to save items to their profile they are intrested in
+ * Allows users to view saved items to their profile they are intrested in
 
 ![](/media/My_profile.png)   
 
@@ -287,7 +284,7 @@ Incorporating these strategies will create a holistic approach to promoting Emer
 
 ![](media/404.png)
 
-## Oppurtunities For Future Features ##
+## Opportunities For Future Features ##
 
  * Allow super users set a quantity for products so items which are out of stock become unavailable for purchase
  * Implement a pop up when the user visits the home page initially which would advertise a sale or ask 
@@ -297,6 +294,7 @@ Incorporating these strategies will create a holistic approach to promoting Emer
  * Approve testimonials before they are published , they can however be removed 
  * Intergrate more social media
  * Add a blog
+ * Follow up emails to customers who abandon their shopping carts with discount codes
 
 ## Database Models ##
 
@@ -555,9 +553,9 @@ ALLOWED_HOSTS = ['app-name.herokuapp.com', 'localhost']
 ## Sources Credits ##
 
 * Product images were taken from solvar.ie
-* Inspiration was taken from the walkthrough boutique Ado project for the checkout, profile, bag and products 
+* Inspiration was taken from the walkthrough Boutique Ado project for the checkout, profile, bag and products 
   apps aswell as the nav bar
 * The steps listed in the *Connect To Amazon AWS S3* part of the ReadMe were taken from my mentors 
   ReadMe as the steps were exactly the same
 * I had my own website before selling jewelry which I built on shopify which is closed. I built a 
-  Facebook page for that site which I used in this project as it demomnstrates all the skills needed and is relvant. 
+  Facebook page for that site which I used in this project as it demomnstrates all the skills needed and is relevant. 

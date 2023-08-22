@@ -15,8 +15,8 @@ No CSS errors found.
 
 I utilized the "pycodestyle" tool to assess my Python code. "pycodestyle" is a command-line utility obtainable through pip installation. I executed the command "pycodestyle --first <-appname->," modifying it based on the documentation's recommendation. This command scans through all files within both the main and subdirectories of the app and promptly reports the initial encountered error.
 
-I did work through all reported errors but there are a handful of E501 errorsin various files I decided not to shorten.
-For example  the "AUTH_PASSWORD_VALIDATORS" settings in my settings.py file. It is bnot advisible to shorten those. 
+I did work through all reported errors but there are a handful of E501 errors in various files I decided not to shorten.
+For example the `AUTH_PASSWORD_VALIDATORS` settings in my settings.py file. It is not advisible to shorten those. 
 
 ## Lighthouse Scores 
 
@@ -46,15 +46,15 @@ For example  the "AUTH_PASSWORD_VALIDATORS" settings in my settings.py file. It 
 
 ## Manual Testing
 
-For the following, I will skip the type of user, i.e. "As a shopper, I can…” and only list the latter part of the story as a heading.
+For the following, I will skip the type of user, i.e. "As a shopper, I can…” and only list the latter part of the story as a heading
 
 **Set up and deployment**
 
  *Site accessibility*
 
-  * Result Passed : Access the site via the deployed URL on the desktop.
-  * Result Passed : Access the site via the deployed URL on the tablet.
-  * Result Passed : Access the site via the deployed URL on the mobile.
+  * Result Passed : Access the site via the deployed URL on the desktop
+  * Result Passed : Access the site via the deployed URL on the tablet
+  * Result Passed : Access the site via the deployed URL on the mobile
 
  *Viewing & Navigation*
 
@@ -69,13 +69,13 @@ For the following, I will skip the type of user, i.e. "As a shopper, I can…”
   * Result Passed : Guest can create account
   * Result Passed : User can login and logout of account
   * Result Passed : Recover password if lost
-  * Result Passed : Recieve email after registering
+  * Result Passed : Receive email after registering
   * Result Passed : View personal order history, shipping information
   * Result Passed : Be able to update shipping information
 
  *Sorting & Searching*
 
-  * Result Passed : Products can be easily sorted by proce, name, rating alphabetically
+  * Result Passed : Products can be easily sorted by price, name, rating & alphabetically
   * Result Passed : Products can be viewed by category
   * Result Passed : Products can be found via the search bar when searching by name or description
 
