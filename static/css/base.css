@@ -9,7 +9,7 @@ body {
     height: calc(80vh - 132px);
     background-color:#ebf3eb;
     color: #494932;
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
     
     min-height: 100%;
 

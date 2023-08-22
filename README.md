@@ -93,7 +93,7 @@ The colour (#494932) was used for the footer and various button and links throug
 
 **Fonts**
 
-Add content
+The Font Lato was used for most of the headings and Serif as a backup font.
 
 **Images and Logos/Icons**
 
