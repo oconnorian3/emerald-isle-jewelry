@@ -559,3 +559,4 @@ ALLOWED_HOSTS = ['app-name.herokuapp.com', 'localhost']
   ReadMe as the steps were exactly the same
 * I had my own website before selling jewelry which I built on shopify which is closed. I built a 
   Facebook page for that site which I used in this project as it demomnstrates all the skills needed and is relevant. 
+* https://www.wordstream.com/keywords was used for keyword research
