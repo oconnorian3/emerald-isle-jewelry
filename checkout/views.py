@@ -6,7 +6,8 @@ from django.conf import settings
 import stripe
 import json
 
-from .forms import OrderForm, UserProfileForm 
+from profiles.forms import UserProfileForm
+from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
