@@ -6,7 +6,7 @@ from django.conf import settings
 import stripe
 import json
 
-from .forms import OrderForm
+from .forms import OrderForm, UserProfileForm 
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
@@ -165,7 +165,7 @@ def checkout_success(request, order_number):
                 'default_street_address2': order.street_address2,
                 'default_county': order.county,
             }
-            user_profile_form = UserProfile(profile_data, instance=profile)
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
