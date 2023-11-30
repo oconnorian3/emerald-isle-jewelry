@@ -89,6 +89,7 @@ For the following, I will skip the type of user, i.e. "As a shopper, I can…”
   * Result Passed : Be able to link back to bag from checkout page
   * Result Passed : View order summary in checkout page
   * Result Passed : Ability to save items for later and have that information stored on users profile
+  * Result Passed : Remove Save for Later option for non logged in users
   * Result Passed : Prompt user with how much extra they need to spend to gain free shipping
   * Result Passed : Charge shipping for orders which do not meet the $100 limit
   * Result Passed : Do not process orders unless all required fields are filled out
