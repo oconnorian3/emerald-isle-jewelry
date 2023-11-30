@@ -63,13 +63,15 @@ For the following, I will skip the type of user, i.e. "As a shopper, I can…”
   * Result Passed : Can view products
   * Result Passed : All products render a description , price and rating
   * Result Passed : Can view total of purchases at any time
+  * Result Passed : All buttons direct user as expected
 
  *Registration and User Accounts*
 
   * Result Passed : Guest can create account
+  * Result Passed : User cannot login with incorrect credentials
   * Result Passed : User can login and logout of account
-  * Result Passed : Recover password if lost
-  * Result Passed : Receive email after registering
+  * Result Passed : User can recieve by email a link to reset password
+  * Result Passed : User receives email after registering
   * Result Passed : View personal order history, shipping information
   * Result Passed : Be able to update shipping information
 
@@ -122,5 +124,6 @@ For the following, I will skip the type of user, i.e. "As a shopper, I can…”
   * Result Passed : Allow users to subscribe to newsletter and pass that information onto the mailchimp account
   * Result Passed : Facebook link in footer redirects to Facebook page
   * Result Passed : Custom 404 page
+  * Result Passed : Debug Mode set to False 
 
 [Back to README](https://github.com/oconnorian3/emerald-isle-jewelry/blob/main/README.md)
